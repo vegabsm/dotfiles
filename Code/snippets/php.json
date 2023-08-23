@@ -1,0 +1,45 @@
+{
+    "PHP Unit Test": {
+        "prefix": "testunit",
+        "body": [
+            "/** @test */",
+            "public function ${1/[ ]/_/g}()",
+            "{",
+            "    $0",
+            "}"
+        ],
+        "description": "Create a new PHPUnit Testcase"
+    },
+
+    "PEST Test": {
+        "prefix": "test",
+        "body": [
+            "test(\"${1}\", function () {",
+            "    $0",
+            "});"
+        ],
+        "description": "Create a new PEST Test"
+    },
+
+    "PEST IT Test": {
+        "prefix": "it",
+        "body": [
+            "it(\"${1}\", function () {",
+            "    $0",
+            "});"
+        ],
+        "description": "Create a new PEST it Test"
+    },
+
+    "Without Exception Handling": {
+        "prefix": "weh",
+        "body": "\\$this->withoutExceptionHandling();",
+        "description": "Add Without Exception Handling Function"
+    },
+
+    "User From Factory": {
+        "prefix": "$user",
+        "body": "\\$user = User::factory()->create();",
+        "description": "Create a user variable from a factory"
+    },
+}
