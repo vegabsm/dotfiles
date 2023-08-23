@@ -1,0 +1,188 @@
+{
+  /** Better Defaults **/
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.settings.editor": "json",
+  "window.restoreFullscreen": true,
+"explorer.confirmDelete": false,
+  "css.validate": false,
+  /** Hide Everything */
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "none",
+  "scm.diffDecorations": "gutter",
+  // "editor.hover.enabled": false,
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": false,
+  // "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": false,
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  /** Typography **/
+  "editor.fontFamily": "Inconsolata",
+  "workbench.colorTheme": "Nord Wave",
+  "workbench.colorCustomizations": {
+    "editor.background": "#09090b",
+    "sideBar.background": "#09090b",
+    "sideBar.border": "#151515",
+    "terminal.background": "#09090b",
+    "panel.background": "#09090b",
+    "editorLineNumber.foreground": "#111",
+    "sideBar.foreground": "#a1a1aa",
+    "list.hoverBackground": "#18181b",
+    "list.activeSelectionBackground": "#18181b",
+    "quickInput.background": "#0a0a0a"
+  },
+  "editor.fontSize": 14,
+  "editor.lineHeight": 50,
+  "editor.suggestFontSize": 16,
+"editor.suggestLineHeight": 40,
+  "terminal.integrated.lineHeight": 1.75,
+  /** Find **/
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+    "**/vendor/{[^l],?[^ai]}*": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/{[^i],?[^n]}*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/_ide_helper.php": true,
+    "**/composer.lock": true,
+    "**/package-lock.json": true,
+    "storage": true,
+    ".phpunit.result.cache": true,
+    "build_local": true
+  },
+  /** Code **/
+  // Include "-" in word selection.
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "files.associations": {
+    ".php_cs": "php",
+    ".php_cs.dist": "php",
+    "*.blade.php": "html"
+  },
+  /** Terminal **/
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.copyOnSelection": true,
+  /** PHP **/
+  "php.suggest.basic": false,
+  /** Prettier **/
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  /** Window Settings **/
+  "workbench.iconTheme": "material-icon-theme",
+  "window.titleBarStyle": "native",
+  "customizeUI.titleBar": "frameless",
+  "customizeUI.stylesheet": {
+    // ".editor .title": "background: transparent !important;",
+    // ".editor .title .label-container .monaco-icon-label:before": "content: none",
+    // ".editor .title .label-container .monaco-icon-label-container": "display: flex; flex-direction: row-reverse; justify-content: center",
+    // ".editor .title .label-container": "visibility: hidden",
+    // Hide top-right buttons
+    // ".editor .title .actions-container .action-item a": "visibility: hidden;",
+    // Show top-right "settings goto icon"
+    // ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
+    // Make it the "right-most" icon.
+    // ".editor .title .actions-container": "flex-direction: row-reverse;",
+    // Only show the scrollbar on hover.
+    // ".editor .scrollbar .slider": "visibility: hidden",
+    // ".editor .scrollbar:hover .slider": "visibility: initial",
+    // Change cursor color.
+    // ".monaco-editor .cursor": "background: #00bbff"
+  },
+  /** Code Spellcheck */
+  "cSpell.userWords": [
+    "Assertable",
+    "Authenticatable",
+    "endphp",
+    "Heffalump",
+    "heroicon",
+    "Illem",
+    "Jetstream",
+    "Laravel",
+    "Livewire",
+    "longtext",
+    "onboarded",
+    "planesmith",
+    "semibold",
+    "signup",
+    "tailwindcss",
+    "todos"
+],
+  "diffEditor.renderSideBySide": false,
+  "prettier.printWidth": 120,
+  "html.format.wrapLineLength": 80,
+  "git.ignoreMissingGitWarning": true,
+  "terminal.integrated.cursorBlinking": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+},
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+"php-cs-fixer.lastDownload": 1656139647653,
+"namespaceResolver.showMessageOnStatusBar": true,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "editor.guides.indentation": false,
+  "workbench.panel.defaultLocation": "right",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+},
+"intelephense.format.enable": false,
+"laravel-pint.enable": true,
+"extensions.ignoreRecommendations": true,
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"editor.linkedEditing": true,
+"editor.formatOnSave": true,
+"projectManager.showProjectNameInStatusBar": false,
+"projectManager.git.baseFolders": [
+    "~/Sites"
+],
+"terminal.integrated.defaultProfile.osx": "zsh",
+"terminal.integrated.fontSize": 14,
+"terminal.integrated.tabs.enabled": false,
+"terminal.integrated.enablePersistentSessions": false,
+"workbench.statusBar.visible": false,
+}
