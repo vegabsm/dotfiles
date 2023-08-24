@@ -2,15 +2,16 @@
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]})") && pwd)
 
 echo 'Linking .zshrc'
-ln -s $DOTFILES/.zshrc $HOME/.zsrhc
+rm $HOME/.zshrc
+cp $DOTFILES/.zshrc $HOME/.zshrc
 
 echo 'Linking .gitconfig'
-ln -s $DOTFILES/.gitconfig $HOME/.gitconfig
+cp $DOTFILES/.gitconfig $HOME/.gitconfig
 
 echo 'Copying oh-my-zsh theme'
-cp $DOTFILES/oh-my-zsh/oh-my-zsh/hyperzsh.zsh-theme $HOME/.oh-my-zsh/custom/themes/hyperzsh.zsh-theme
+cp $DOTFILES/oh-my-zsh/hyperzsh.zsh-theme $HOME/.oh-my-zsh/custom/themes/hyperzsh.zsh-theme
 
 echo 'Copying Code files'
-cp $DOTFILES/Code/keybindings.json $HOME/Users/$USER/Library/Application\ Support/Code/User/keybindings.json
-cp $DOTFILES/Code/settings.json $HOME/Users/$USER/Library/Application\ Support/Code/User/settings.json
-cp $DOTFILES/Code/snippets/php.json $HOME/Users/$USER/Library/Application\ Support/Code/User/snippets/php.json
+cp $DOTFILES/Code/keybindings.json /Users/$USER/Library/Application\ Support/Code/User/keybindings.json
+cp $DOTFILES/Code/settings.json /Users/$USER/Library/Application\ Support/Code/User/settings.json
+cp $DOTFILES/Code/snippets/php.json /Users/$USER/Library/Application\ Support/Code/User/snippets/php.json
